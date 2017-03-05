@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gussing Game</title>
+</head>
+<style>
+	
+	body{
+	background-color:red;
+	}
+
+
+
+
+
+</style>
+<body>
+    <center>
+        <h1>Guess the Number?</h1>
+        <input id="form"></input>
+        <button id="submit">Ok</button>
+        <script type="text/javascript">
+        document.getElementById("submit").onclick = function() {
+
+            var x = Math.random();
+            x = 6 * x;
+            x = Math.floor(x);
+
+            if (document.getElementById("form").value == x) {
+                alert("You got it!");
+
+            } else {
+                alert("Wrong Number! I was Guessing " + x);
+            }
+
+
+        }
+        </script>
+    </center>
+</body>
+
+</html>
